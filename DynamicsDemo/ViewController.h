@@ -10,4 +10,6 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)showAlertView:(id)sender;
+
 @end

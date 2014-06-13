@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0527C0918E9D7280039A20A /* AlertComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = C0527C0818E9D7280039A20A /* AlertComponent.m */; };
 		C0F7489918E9C51700A17EC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F7489818E9C51700A17EC6 /* Foundation.framework */; };
 		C0F7489B18E9C51700A17EC6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F7489A18E9C51700A17EC6 /* CoreGraphics.framework */; };
 		C0F7489D18E9C51700A17EC6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F7489C18E9C51700A17EC6 /* UIKit.framework */; };
@@ -21,6 +22,7 @@
 		C0F748BA18E9C51700A17EC6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F7489C18E9C51700A17EC6 /* UIKit.framework */; };
 		C0F748C218E9C51700A17EC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0F748C018E9C51700A17EC6 /* InfoPlist.strings */; };
 		C0F748C418E9C51700A17EC6 /* DynamicsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F748C318E9C51700A17EC6 /* DynamicsDemoTests.m */; };
+		C0F748CF18E9C5C100A17EC6 /* MenuComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F748CE18E9C5C100A17EC6 /* MenuComponent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C0527C0718E9D7280039A20A /* AlertComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertComponent.h; sourceTree = "<group>"; };
+		C0527C0818E9D7280039A20A /* AlertComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertComponent.m; sourceTree = "<group>"; };
 		C0F7489518E9C51700A17EC6 /* DynamicsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F7489818E9C51700A17EC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C0F7489A18E9C51700A17EC6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +57,8 @@
 		C0F748BF18E9C51700A17EC6 /* DynamicsDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DynamicsDemoTests-Info.plist"; sourceTree = "<group>"; };
 		C0F748C118E9C51700A17EC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C0F748C318E9C51700A17EC6 /* DynamicsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicsDemoTests.m; sourceTree = "<group>"; };
+		C0F748CD18E9C5C100A17EC6 /* MenuComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuComponent.h; sourceTree = "<group>"; };
+		C0F748CE18E9C5C100A17EC6 /* MenuComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuComponent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,10 @@
 				C0F748AA18E9C51700A17EC6 /* Main.storyboard */,
 				C0F748AD18E9C51700A17EC6 /* ViewController.h */,
 				C0F748AE18E9C51700A17EC6 /* ViewController.m */,
+				C0F748CD18E9C5C100A17EC6 /* MenuComponent.h */,
+				C0F748CE18E9C5C100A17EC6 /* MenuComponent.m */,
+				C0527C0718E9D7280039A20A /* AlertComponent.h */,
+				C0527C0818E9D7280039A20A /* AlertComponent.m */,
 				C0F748B018E9C51700A17EC6 /* Images.xcassets */,
 				C0F7489F18E9C51700A17EC6 /* Supporting Files */,
 			);
@@ -250,7 +260,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0F748AF18E9C51700A17EC6 /* ViewController.m in Sources */,
+				C0527C0918E9D7280039A20A /* AlertComponent.m in Sources */,
 				C0F748A918E9C51700A17EC6 /* AppDelegate.m in Sources */,
+				C0F748CF18E9C5C100A17EC6 /* MenuComponent.m in Sources */,
 				C0F748A518E9C51700A17EC6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +391,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DynamicsDemo/DynamicsDemo-Prefix.pch";
 				INFOPLIST_FILE = "DynamicsDemo/DynamicsDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,6 +405,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DynamicsDemo/DynamicsDemo-Prefix.pch";
 				INFOPLIST_FILE = "DynamicsDemo/DynamicsDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -456,6 +470,7 @@
 				C0F748C918E9C51700A17EC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0F748CA18E9C51700A17EC6 /* Build configuration list for PBXNativeTarget "DynamicsDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +479,7 @@
 				C0F748CC18E9C51700A17EC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
